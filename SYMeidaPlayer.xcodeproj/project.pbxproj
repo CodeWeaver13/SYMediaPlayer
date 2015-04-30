@@ -46,6 +46,8 @@
 		CF710D0A1AF0AC9D0033B44E /* SYVideoPlayerLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF710CE61AF0AC9D0033B44E /* SYVideoPlayerLoadingView.m */; };
 		CF710D0B1AF0AC9D0033B44E /* SYVideoPlayerLoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF710CE71AF0AC9D0033B44E /* SYVideoPlayerLoadingView.xib */; };
 		CF710D0C1AF0AC9D0033B44E /* SYMoviePlayerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CF710CEA1AF0AC9D0033B44E /* SYMoviePlayerManager.m */; };
+		CFB5807D1AF27B7800F3E7D5 /* fullView.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFB5807C1AF27B7800F3E7D5 /* fullView.jpg */; };
+		CFB5807F1AF27B7D00F3E7D5 /* defaultView.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFB5807E1AF27B7D00F3E7D5 /* defaultView.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -114,6 +116,8 @@
 		CF710CE71AF0AC9D0033B44E /* SYVideoPlayerLoadingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SYVideoPlayerLoadingView.xib; sourceTree = "<group>"; };
 		CF710CE91AF0AC9D0033B44E /* SYMoviePlayerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYMoviePlayerManager.h; sourceTree = "<group>"; };
 		CF710CEA1AF0AC9D0033B44E /* SYMoviePlayerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYMoviePlayerManager.m; sourceTree = "<group>"; };
+		CFB5807C1AF27B7800F3E7D5 /* fullView.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fullView.jpg; sourceTree = "<group>"; };
+		CFB5807E1AF27B7D00F3E7D5 /* defaultView.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = defaultView.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +180,8 @@
 		CF710BF01AF0A6800033B44E /* SYMeidaPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				CFB5807C1AF27B7800F3E7D5 /* fullView.jpg */,
+				CFB5807E1AF27B7D00F3E7D5 /* defaultView.jpg */,
 				CF710CB51AF0AC9D0033B44E /* Code */,
 				CF710BF51AF0A6800033B44E /* AppDelegate.h */,
 				CF710BF61AF0A6800033B44E /* AppDelegate.m */,
@@ -396,12 +402,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF710CED1AF0AC9D0033B44E /* player_bottom_button_2_rewind_iphone@2x.png in Resources */,
+				CFB5807D1AF27B7800F3E7D5 /* fullView.jpg in Resources */,
 				CF710CF11AF0AC9D0033B44E /* player_bottom_button_5_next_iphone@2x.png in Resources */,
 				CF710CEF1AF0AC9D0033B44E /* player_bottom_button_3_play1_iphone@2x.png in Resources */,
 				CF710CF51AF0AC9D0033B44E /* player_set_02_config_icon_video@2x.png in Resources */,
 				CF710CEC1AF0AC9D0033B44E /* player_bottom_button_1_back_iphone@2x.png in Resources */,
 				CF5B24D21AF221300011C2E0 /* SYVideoPlayerView.storyboard in Resources */,
 				CF710CFA1AF0AC9D0033B44E /* player_top_button_resize@2x.png in Resources */,
+				CFB5807F1AF27B7D00F3E7D5 /* defaultView.jpg in Resources */,
 				CF710CFD1AF0AC9D0033B44E /* player_top_runtime_g_iphone@2x.png in Resources */,
 				CF710CF61AF0AC9D0033B44E /* player_set_button_arrow_before@2x.png in Resources */,
 				CF710CF81AF0AC9D0033B44E /* player_setting_redtab1@2x.png in Resources */,
