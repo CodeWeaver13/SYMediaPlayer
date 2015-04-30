@@ -1,0 +1,677 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CF5B24CD1AF211C90011C2E0 /* SYVideoPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF5B24CC1AF211C90011C2E0 /* SYVideoPlayerView.m */; };
+		CF5B24D01AF21FCA0011C2E0 /* SYVideoPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF5B24CF1AF21FCA0011C2E0 /* SYVideoPlayerViewController.m */; };
+		CF5B24D21AF221300011C2E0 /* SYVideoPlayerView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF5B24D11AF221300011C2E0 /* SYVideoPlayerView.storyboard */; };
+		CF5D7A381AF1DF9800D94274 /* SYVideoPlayerDefaultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF5D7A371AF1DF9800D94274 /* SYVideoPlayerDefaultViewController.m */; };
+		CF710BF41AF0A6800033B44E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CF710BF31AF0A6800033B44E /* main.m */; };
+		CF710BF71AF0A6800033B44E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF710BF61AF0A6800033B44E /* AppDelegate.m */; };
+		CF710BFA1AF0A6800033B44E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF710BF91AF0A6800033B44E /* ViewController.m */; };
+		CF710BFD1AF0A6810033B44E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF710BFB1AF0A6810033B44E /* Main.storyboard */; };
+		CF710BFF1AF0A6810033B44E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF710BFE1AF0A6810033B44E /* Images.xcassets */; };
+		CF710C021AF0A6810033B44E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF710C001AF0A6810033B44E /* LaunchScreen.xib */; };
+		CF710C0E1AF0A6810033B44E /* SYMeidaPlayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF710C0D1AF0A6810033B44E /* SYMeidaPlayerTests.m */; };
+		CF710CEC1AF0AC9D0033B44E /* player_bottom_button_1_back_iphone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CF710CB71AF0AC9D0033B44E /* player_bottom_button_1_back_iphone@2x.png */; };
+		CF710CED1AF0AC9D0033B44E /* player_bottom_button_2_rewind_iphone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CF710CB81AF0AC9D0033B44E /* player_bottom_button_2_rewind_iphone@2x.png */; };
+		CF710CEE1AF0AC9D0033B44E /* player_bottom_button_3_play0_iphone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CF710CB91AF0AC9D0033B44E /* player_bottom_button_3_play0_iphone@2x.png */; };
+		CF710CEF1AF0AC9D0033B44E /* player_bottom_button_3_play1_iphone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CF710CBA1AF0AC9D0033B44E /* player_bottom_button_3_play1_iphone@2x.png */; };
+		CF710CF01AF0AC9D0033B44E /* player_bottom_button_4_forward_iphone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CF710CBB1AF0AC9D0033B44E /* player_bottom_button_4_forward_iphone@2x.png */; };
+		CF710CF11AF0AC9D0033B44E /* player_bottom_button_5_next_iphone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CF710CBC1AF0AC9D0033B44E /* player_bottom_button_5_next_iphone@2x.png */; };
+		CF710CF21AF0AC9D0033B44E /* player_bottom_button_lock0_iphone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CF710CBD1AF0AC9D0033B44E /* player_bottom_button_lock0_iphone@2x.png */; };
+		CF710CF31AF0AC9D0033B44E /* player_bottom_button_lock1_iphone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CF710CBE1AF0AC9D0033B44E /* player_bottom_button_lock1_iphone@2x.png */; };
+		CF710CF41AF0AC9D0033B44E /* player_bottom_button_vol_iphone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CF710CBF1AF0AC9D0033B44E /* player_bottom_button_vol_iphone@2x.png */; };
+		CF710CF51AF0AC9D0033B44E /* player_set_02_config_icon_video@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CF710CC01AF0AC9D0033B44E /* player_set_02_config_icon_video@2x.png */; };
+		CF710CF61AF0AC9D0033B44E /* player_set_button_arrow_before@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CF710CC11AF0AC9D0033B44E /* player_set_button_arrow_before@2x.png */; };
+		CF710CF71AF0AC9D0033B44E /* player_set_button_arrow_next@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CF710CC21AF0AC9D0033B44E /* player_set_button_arrow_next@2x.png */; };
+		CF710CF81AF0AC9D0033B44E /* player_setting_redtab1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CF710CC31AF0AC9D0033B44E /* player_setting_redtab1@2x.png */; };
+		CF710CF91AF0AC9D0033B44E /* player_top_button_menu_iphone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CF710CC41AF0AC9D0033B44E /* player_top_button_menu_iphone@2x.png */; };
+		CF710CFA1AF0AC9D0033B44E /* player_top_button_resize@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CF710CC51AF0AC9D0033B44E /* player_top_button_resize@2x.png */; };
+		CF710CFB1AF0AC9D0033B44E /* player_top_button_resize_min@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CF710CC61AF0AC9D0033B44E /* player_top_button_resize_min@2x.png */; };
+		CF710CFC1AF0AC9D0033B44E /* player_top_button_tvout_@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CF710CC71AF0AC9D0033B44E /* player_top_button_tvout_@2x.png */; };
+		CF710CFD1AF0AC9D0033B44E /* player_top_runtime_g_iphone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CF710CC81AF0AC9D0033B44E /* player_top_runtime_g_iphone@2x.png */; };
+		CF710CFE1AF0AC9D0033B44E /* player_top_runtime_g_portrait_iphone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CF710CC91AF0AC9D0033B44E /* player_top_runtime_g_portrait_iphone@2x.png */; };
+		CF710CFF1AF0AC9D0033B44E /* player_top_runtime_r_iphone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CF710CCA1AF0AC9D0033B44E /* player_top_runtime_r_iphone@2x.png */; };
+		CF710D001AF0AC9D0033B44E /* player_top_runtime_r_portrait_iphone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CF710CCB1AF0AC9D0033B44E /* player_top_runtime_r_portrait_iphone@2x.png */; };
+		CF710D011AF0AC9D0033B44E /* SYAudioPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF710CCE1AF0AC9D0033B44E /* SYAudioPlayerView.m */; };
+		CF710D021AF0AC9D0033B44E /* SYMediaPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = CF710CD01AF0AC9D0033B44E /* SYMediaPlayer.m */; };
+		CF710D031AF0AC9D0033B44E /* SYThumbImageForVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = CF710CD51AF0AC9D0033B44E /* SYThumbImageForVideo.m */; };
+		CF710D041AF0AC9D0033B44E /* SYTimeFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = CF710CD71AF0AC9D0033B44E /* SYTimeFormatter.m */; };
+		CF710D051AF0AC9D0033B44E /* SYVideoPlayerDefaultView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF710CDC1AF0AC9D0033B44E /* SYVideoPlayerDefaultView.m */; };
+		CF710D0A1AF0AC9D0033B44E /* SYVideoPlayerLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF710CE61AF0AC9D0033B44E /* SYVideoPlayerLoadingView.m */; };
+		CF710D0B1AF0AC9D0033B44E /* SYVideoPlayerLoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF710CE71AF0AC9D0033B44E /* SYVideoPlayerLoadingView.xib */; };
+		CF710D0C1AF0AC9D0033B44E /* SYMoviePlayerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CF710CEA1AF0AC9D0033B44E /* SYMoviePlayerManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CF710C081AF0A6810033B44E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF710BE61AF0A6800033B44E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF710BED1AF0A6800033B44E;
+			remoteInfo = SYMeidaPlayer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CF5B24CB1AF211C90011C2E0 /* SYVideoPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYVideoPlayerView.h; sourceTree = "<group>"; };
+		CF5B24CC1AF211C90011C2E0 /* SYVideoPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYVideoPlayerView.m; sourceTree = "<group>"; };
+		CF5B24CE1AF21FCA0011C2E0 /* SYVideoPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYVideoPlayerViewController.h; sourceTree = "<group>"; };
+		CF5B24CF1AF21FCA0011C2E0 /* SYVideoPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYVideoPlayerViewController.m; sourceTree = "<group>"; };
+		CF5B24D11AF221300011C2E0 /* SYVideoPlayerView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SYVideoPlayerView.storyboard; sourceTree = "<group>"; };
+		CF5D7A361AF1DF9800D94274 /* SYVideoPlayerDefaultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYVideoPlayerDefaultViewController.h; sourceTree = "<group>"; };
+		CF5D7A371AF1DF9800D94274 /* SYVideoPlayerDefaultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYVideoPlayerDefaultViewController.m; sourceTree = "<group>"; };
+		CF710BEE1AF0A6800033B44E /* SYMeidaPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SYMeidaPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF710BF21AF0A6800033B44E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF710BF31AF0A6800033B44E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CF710BF51AF0A6800033B44E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CF710BF61AF0A6800033B44E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CF710BF81AF0A6800033B44E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CF710BF91AF0A6800033B44E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CF710BFC1AF0A6810033B44E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CF710BFE1AF0A6810033B44E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CF710C011AF0A6810033B44E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		CF710C071AF0A6810033B44E /* SYMeidaPlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SYMeidaPlayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF710C0C1AF0A6810033B44E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF710C0D1AF0A6810033B44E /* SYMeidaPlayerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYMeidaPlayerTests.m; sourceTree = "<group>"; };
+		CF710CB71AF0AC9D0033B44E /* player_bottom_button_1_back_iphone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "player_bottom_button_1_back_iphone@2x.png"; sourceTree = "<group>"; };
+		CF710CB81AF0AC9D0033B44E /* player_bottom_button_2_rewind_iphone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "player_bottom_button_2_rewind_iphone@2x.png"; sourceTree = "<group>"; };
+		CF710CB91AF0AC9D0033B44E /* player_bottom_button_3_play0_iphone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "player_bottom_button_3_play0_iphone@2x.png"; sourceTree = "<group>"; };
+		CF710CBA1AF0AC9D0033B44E /* player_bottom_button_3_play1_iphone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "player_bottom_button_3_play1_iphone@2x.png"; sourceTree = "<group>"; };
+		CF710CBB1AF0AC9D0033B44E /* player_bottom_button_4_forward_iphone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "player_bottom_button_4_forward_iphone@2x.png"; sourceTree = "<group>"; };
+		CF710CBC1AF0AC9D0033B44E /* player_bottom_button_5_next_iphone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "player_bottom_button_5_next_iphone@2x.png"; sourceTree = "<group>"; };
+		CF710CBD1AF0AC9D0033B44E /* player_bottom_button_lock0_iphone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "player_bottom_button_lock0_iphone@2x.png"; sourceTree = "<group>"; };
+		CF710CBE1AF0AC9D0033B44E /* player_bottom_button_lock1_iphone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "player_bottom_button_lock1_iphone@2x.png"; sourceTree = "<group>"; };
+		CF710CBF1AF0AC9D0033B44E /* player_bottom_button_vol_iphone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "player_bottom_button_vol_iphone@2x.png"; sourceTree = "<group>"; };
+		CF710CC01AF0AC9D0033B44E /* player_set_02_config_icon_video@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "player_set_02_config_icon_video@2x.png"; sourceTree = "<group>"; };
+		CF710CC11AF0AC9D0033B44E /* player_set_button_arrow_before@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "player_set_button_arrow_before@2x.png"; sourceTree = "<group>"; };
+		CF710CC21AF0AC9D0033B44E /* player_set_button_arrow_next@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "player_set_button_arrow_next@2x.png"; sourceTree = "<group>"; };
+		CF710CC31AF0AC9D0033B44E /* player_setting_redtab1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "player_setting_redtab1@2x.png"; sourceTree = "<group>"; };
+		CF710CC41AF0AC9D0033B44E /* player_top_button_menu_iphone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "player_top_button_menu_iphone@2x.png"; sourceTree = "<group>"; };
+		CF710CC51AF0AC9D0033B44E /* player_top_button_resize@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "player_top_button_resize@2x.png"; sourceTree = "<group>"; };
+		CF710CC61AF0AC9D0033B44E /* player_top_button_resize_min@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "player_top_button_resize_min@2x.png"; sourceTree = "<group>"; };
+		CF710CC71AF0AC9D0033B44E /* player_top_button_tvout_@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "player_top_button_tvout_@2x.png"; sourceTree = "<group>"; };
+		CF710CC81AF0AC9D0033B44E /* player_top_runtime_g_iphone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "player_top_runtime_g_iphone@2x.png"; sourceTree = "<group>"; };
+		CF710CC91AF0AC9D0033B44E /* player_top_runtime_g_portrait_iphone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "player_top_runtime_g_portrait_iphone@2x.png"; sourceTree = "<group>"; };
+		CF710CCA1AF0AC9D0033B44E /* player_top_runtime_r_iphone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "player_top_runtime_r_iphone@2x.png"; sourceTree = "<group>"; };
+		CF710CCB1AF0AC9D0033B44E /* player_top_runtime_r_portrait_iphone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "player_top_runtime_r_portrait_iphone@2x.png"; sourceTree = "<group>"; };
+		CF710CCD1AF0AC9D0033B44E /* SYAudioPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYAudioPlayerView.h; sourceTree = "<group>"; };
+		CF710CCE1AF0AC9D0033B44E /* SYAudioPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYAudioPlayerView.m; sourceTree = "<group>"; };
+		CF710CCF1AF0AC9D0033B44E /* SYMediaPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYMediaPlayer.h; sourceTree = "<group>"; };
+		CF710CD01AF0AC9D0033B44E /* SYMediaPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYMediaPlayer.m; sourceTree = "<group>"; };
+		CF710CD21AF0AC9D0033B44E /* SYMoviePlayerMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYMoviePlayerMacro.h; sourceTree = "<group>"; };
+		CF710CD41AF0AC9D0033B44E /* SYThumbImageForVideo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYThumbImageForVideo.h; sourceTree = "<group>"; };
+		CF710CD51AF0AC9D0033B44E /* SYThumbImageForVideo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYThumbImageForVideo.m; sourceTree = "<group>"; };
+		CF710CD61AF0AC9D0033B44E /* SYTimeFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYTimeFormatter.h; sourceTree = "<group>"; };
+		CF710CD71AF0AC9D0033B44E /* SYTimeFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYTimeFormatter.m; sourceTree = "<group>"; };
+		CF710CDB1AF0AC9D0033B44E /* SYVideoPlayerDefaultView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYVideoPlayerDefaultView.h; sourceTree = "<group>"; };
+		CF710CDC1AF0AC9D0033B44E /* SYVideoPlayerDefaultView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYVideoPlayerDefaultView.m; sourceTree = "<group>"; };
+		CF710CE51AF0AC9D0033B44E /* SYVideoPlayerLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYVideoPlayerLoadingView.h; sourceTree = "<group>"; };
+		CF710CE61AF0AC9D0033B44E /* SYVideoPlayerLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYVideoPlayerLoadingView.m; sourceTree = "<group>"; };
+		CF710CE71AF0AC9D0033B44E /* SYVideoPlayerLoadingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SYVideoPlayerLoadingView.xib; sourceTree = "<group>"; };
+		CF710CE91AF0AC9D0033B44E /* SYMoviePlayerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYMoviePlayerManager.h; sourceTree = "<group>"; };
+		CF710CEA1AF0AC9D0033B44E /* SYMoviePlayerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYMoviePlayerManager.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CF710BEB1AF0A6800033B44E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF710C041AF0A6810033B44E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CF5B24CA1AF211650011C2E0 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				CF5B24CB1AF211C90011C2E0 /* SYVideoPlayerView.h */,
+				CF5B24CC1AF211C90011C2E0 /* SYVideoPlayerView.m */,
+				CF5B24CE1AF21FCA0011C2E0 /* SYVideoPlayerViewController.h */,
+				CF5B24CF1AF21FCA0011C2E0 /* SYVideoPlayerViewController.m */,
+				CF5B24D11AF221300011C2E0 /* SYVideoPlayerView.storyboard */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		CF710BE51AF0A6800033B44E = {
+			isa = PBXGroup;
+			children = (
+				CF710BF01AF0A6800033B44E /* SYMeidaPlayer */,
+				CF710C0A1AF0A6810033B44E /* SYMeidaPlayerTests */,
+				CF710BEF1AF0A6800033B44E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CF710BEF1AF0A6800033B44E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF710BEE1AF0A6800033B44E /* SYMeidaPlayer.app */,
+				CF710C071AF0A6810033B44E /* SYMeidaPlayerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF710BF01AF0A6800033B44E /* SYMeidaPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				CF710CB51AF0AC9D0033B44E /* Code */,
+				CF710BF51AF0A6800033B44E /* AppDelegate.h */,
+				CF710BF61AF0A6800033B44E /* AppDelegate.m */,
+				CF710BF81AF0A6800033B44E /* ViewController.h */,
+				CF710BF91AF0A6800033B44E /* ViewController.m */,
+				CF710BFB1AF0A6810033B44E /* Main.storyboard */,
+				CF710BFE1AF0A6810033B44E /* Images.xcassets */,
+				CF710C001AF0A6810033B44E /* LaunchScreen.xib */,
+				CF710BF11AF0A6800033B44E /* Supporting Files */,
+			);
+			path = SYMeidaPlayer;
+			sourceTree = "<group>";
+		};
+		CF710BF11AF0A6800033B44E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CF710BF21AF0A6800033B44E /* Info.plist */,
+				CF710BF31AF0A6800033B44E /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CF710C0A1AF0A6810033B44E /* SYMeidaPlayerTests */ = {
+			isa = PBXGroup;
+			children = (
+				CF710C0D1AF0A6810033B44E /* SYMeidaPlayerTests.m */,
+				CF710C0B1AF0A6810033B44E /* Supporting Files */,
+			);
+			path = SYMeidaPlayerTests;
+			sourceTree = "<group>";
+		};
+		CF710C0B1AF0A6810033B44E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CF710C0C1AF0A6810033B44E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CF710CB51AF0AC9D0033B44E /* Code */ = {
+			isa = PBXGroup;
+			children = (
+				CF710CB61AF0AC9D0033B44E /* Resources */,
+				CF710CCC1AF0AC9D0033B44E /* SYAudioPlayer */,
+				CF710CCF1AF0AC9D0033B44E /* SYMediaPlayer.h */,
+				CF710CD01AF0AC9D0033B44E /* SYMediaPlayer.m */,
+				CF710CD11AF0AC9D0033B44E /* SYMediaPlayerMacro */,
+				CF710CD31AF0AC9D0033B44E /* SYUIExtension */,
+				CF710CD81AF0AC9D0033B44E /* SYVideoPlayer */,
+			);
+			path = Code;
+			sourceTree = "<group>";
+		};
+		CF710CB61AF0AC9D0033B44E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CF710CB71AF0AC9D0033B44E /* player_bottom_button_1_back_iphone@2x.png */,
+				CF710CB81AF0AC9D0033B44E /* player_bottom_button_2_rewind_iphone@2x.png */,
+				CF710CB91AF0AC9D0033B44E /* player_bottom_button_3_play0_iphone@2x.png */,
+				CF710CBA1AF0AC9D0033B44E /* player_bottom_button_3_play1_iphone@2x.png */,
+				CF710CBB1AF0AC9D0033B44E /* player_bottom_button_4_forward_iphone@2x.png */,
+				CF710CBC1AF0AC9D0033B44E /* player_bottom_button_5_next_iphone@2x.png */,
+				CF710CBD1AF0AC9D0033B44E /* player_bottom_button_lock0_iphone@2x.png */,
+				CF710CBE1AF0AC9D0033B44E /* player_bottom_button_lock1_iphone@2x.png */,
+				CF710CBF1AF0AC9D0033B44E /* player_bottom_button_vol_iphone@2x.png */,
+				CF710CC01AF0AC9D0033B44E /* player_set_02_config_icon_video@2x.png */,
+				CF710CC11AF0AC9D0033B44E /* player_set_button_arrow_before@2x.png */,
+				CF710CC21AF0AC9D0033B44E /* player_set_button_arrow_next@2x.png */,
+				CF710CC31AF0AC9D0033B44E /* player_setting_redtab1@2x.png */,
+				CF710CC41AF0AC9D0033B44E /* player_top_button_menu_iphone@2x.png */,
+				CF710CC51AF0AC9D0033B44E /* player_top_button_resize@2x.png */,
+				CF710CC61AF0AC9D0033B44E /* player_top_button_resize_min@2x.png */,
+				CF710CC71AF0AC9D0033B44E /* player_top_button_tvout_@2x.png */,
+				CF710CC81AF0AC9D0033B44E /* player_top_runtime_g_iphone@2x.png */,
+				CF710CC91AF0AC9D0033B44E /* player_top_runtime_g_portrait_iphone@2x.png */,
+				CF710CCA1AF0AC9D0033B44E /* player_top_runtime_r_iphone@2x.png */,
+				CF710CCB1AF0AC9D0033B44E /* player_top_runtime_r_portrait_iphone@2x.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CF710CCC1AF0AC9D0033B44E /* SYAudioPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				CF710CCD1AF0AC9D0033B44E /* SYAudioPlayerView.h */,
+				CF710CCE1AF0AC9D0033B44E /* SYAudioPlayerView.m */,
+			);
+			path = SYAudioPlayer;
+			sourceTree = "<group>";
+		};
+		CF710CD11AF0AC9D0033B44E /* SYMediaPlayerMacro */ = {
+			isa = PBXGroup;
+			children = (
+				CF710CD21AF0AC9D0033B44E /* SYMoviePlayerMacro.h */,
+			);
+			path = SYMediaPlayerMacro;
+			sourceTree = "<group>";
+		};
+		CF710CD31AF0AC9D0033B44E /* SYUIExtension */ = {
+			isa = PBXGroup;
+			children = (
+				CF710CD41AF0AC9D0033B44E /* SYThumbImageForVideo.h */,
+				CF710CD51AF0AC9D0033B44E /* SYThumbImageForVideo.m */,
+				CF710CD61AF0AC9D0033B44E /* SYTimeFormatter.h */,
+				CF710CD71AF0AC9D0033B44E /* SYTimeFormatter.m */,
+			);
+			path = SYUIExtension;
+			sourceTree = "<group>";
+		};
+		CF710CD81AF0AC9D0033B44E /* SYVideoPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				CF5B24CA1AF211650011C2E0 /* Base */,
+				CF710CDA1AF0AC9D0033B44E /* Default */,
+				CF710CDE1AF0AC9D0033B44E /* Full */,
+				CF710CE41AF0AC9D0033B44E /* Loading */,
+				CF710CE81AF0AC9D0033B44E /* System */,
+			);
+			path = SYVideoPlayer;
+			sourceTree = "<group>";
+		};
+		CF710CDA1AF0AC9D0033B44E /* Default */ = {
+			isa = PBXGroup;
+			children = (
+				CF710CDB1AF0AC9D0033B44E /* SYVideoPlayerDefaultView.h */,
+				CF710CDC1AF0AC9D0033B44E /* SYVideoPlayerDefaultView.m */,
+				CF5D7A361AF1DF9800D94274 /* SYVideoPlayerDefaultViewController.h */,
+				CF5D7A371AF1DF9800D94274 /* SYVideoPlayerDefaultViewController.m */,
+			);
+			path = Default;
+			sourceTree = "<group>";
+		};
+		CF710CDE1AF0AC9D0033B44E /* Full */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Full;
+			sourceTree = "<group>";
+		};
+		CF710CE41AF0AC9D0033B44E /* Loading */ = {
+			isa = PBXGroup;
+			children = (
+				CF710CE51AF0AC9D0033B44E /* SYVideoPlayerLoadingView.h */,
+				CF710CE61AF0AC9D0033B44E /* SYVideoPlayerLoadingView.m */,
+				CF710CE71AF0AC9D0033B44E /* SYVideoPlayerLoadingView.xib */,
+			);
+			path = Loading;
+			sourceTree = "<group>";
+		};
+		CF710CE81AF0AC9D0033B44E /* System */ = {
+			isa = PBXGroup;
+			children = (
+				CF710CE91AF0AC9D0033B44E /* SYMoviePlayerManager.h */,
+				CF710CEA1AF0AC9D0033B44E /* SYMoviePlayerManager.m */,
+			);
+			path = System;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CF710BED1AF0A6800033B44E /* SYMeidaPlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF710C111AF0A6810033B44E /* Build configuration list for PBXNativeTarget "SYMeidaPlayer" */;
+			buildPhases = (
+				CF710BEA1AF0A6800033B44E /* Sources */,
+				CF710BEB1AF0A6800033B44E /* Frameworks */,
+				CF710BEC1AF0A6800033B44E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SYMeidaPlayer;
+			productName = SYMeidaPlayer;
+			productReference = CF710BEE1AF0A6800033B44E /* SYMeidaPlayer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CF710C061AF0A6810033B44E /* SYMeidaPlayerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF710C141AF0A6810033B44E /* Build configuration list for PBXNativeTarget "SYMeidaPlayerTests" */;
+			buildPhases = (
+				CF710C031AF0A6810033B44E /* Sources */,
+				CF710C041AF0A6810033B44E /* Frameworks */,
+				CF710C051AF0A6810033B44E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF710C091AF0A6810033B44E /* PBXTargetDependency */,
+			);
+			name = SYMeidaPlayerTests;
+			productName = SYMeidaPlayerTests;
+			productReference = CF710C071AF0A6810033B44E /* SYMeidaPlayerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CF710BE61AF0A6800033B44E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = wangshiyu13;
+				TargetAttributes = {
+					CF710BED1AF0A6800033B44E = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					CF710C061AF0A6810033B44E = {
+						CreatedOnToolsVersion = 6.3;
+						TestTargetID = CF710BED1AF0A6800033B44E;
+					};
+				};
+			};
+			buildConfigurationList = CF710BE91AF0A6800033B44E /* Build configuration list for PBXProject "SYMeidaPlayer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF710BE51AF0A6800033B44E;
+			productRefGroup = CF710BEF1AF0A6800033B44E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CF710BED1AF0A6800033B44E /* SYMeidaPlayer */,
+				CF710C061AF0A6810033B44E /* SYMeidaPlayerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CF710BEC1AF0A6800033B44E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF710CED1AF0AC9D0033B44E /* player_bottom_button_2_rewind_iphone@2x.png in Resources */,
+				CF710CF11AF0AC9D0033B44E /* player_bottom_button_5_next_iphone@2x.png in Resources */,
+				CF710CEF1AF0AC9D0033B44E /* player_bottom_button_3_play1_iphone@2x.png in Resources */,
+				CF710CF51AF0AC9D0033B44E /* player_set_02_config_icon_video@2x.png in Resources */,
+				CF710CEC1AF0AC9D0033B44E /* player_bottom_button_1_back_iphone@2x.png in Resources */,
+				CF5B24D21AF221300011C2E0 /* SYVideoPlayerView.storyboard in Resources */,
+				CF710CFA1AF0AC9D0033B44E /* player_top_button_resize@2x.png in Resources */,
+				CF710CFD1AF0AC9D0033B44E /* player_top_runtime_g_iphone@2x.png in Resources */,
+				CF710CF61AF0AC9D0033B44E /* player_set_button_arrow_before@2x.png in Resources */,
+				CF710CF81AF0AC9D0033B44E /* player_setting_redtab1@2x.png in Resources */,
+				CF710D001AF0AC9D0033B44E /* player_top_runtime_r_portrait_iphone@2x.png in Resources */,
+				CF710BFD1AF0A6810033B44E /* Main.storyboard in Resources */,
+				CF710CF41AF0AC9D0033B44E /* player_bottom_button_vol_iphone@2x.png in Resources */,
+				CF710CFC1AF0AC9D0033B44E /* player_top_button_tvout_@2x.png in Resources */,
+				CF710CF21AF0AC9D0033B44E /* player_bottom_button_lock0_iphone@2x.png in Resources */,
+				CF710CFF1AF0AC9D0033B44E /* player_top_runtime_r_iphone@2x.png in Resources */,
+				CF710CF91AF0AC9D0033B44E /* player_top_button_menu_iphone@2x.png in Resources */,
+				CF710C021AF0A6810033B44E /* LaunchScreen.xib in Resources */,
+				CF710D0B1AF0AC9D0033B44E /* SYVideoPlayerLoadingView.xib in Resources */,
+				CF710CF71AF0AC9D0033B44E /* player_set_button_arrow_next@2x.png in Resources */,
+				CF710CEE1AF0AC9D0033B44E /* player_bottom_button_3_play0_iphone@2x.png in Resources */,
+				CF710CF31AF0AC9D0033B44E /* player_bottom_button_lock1_iphone@2x.png in Resources */,
+				CF710CFE1AF0AC9D0033B44E /* player_top_runtime_g_portrait_iphone@2x.png in Resources */,
+				CF710CF01AF0AC9D0033B44E /* player_bottom_button_4_forward_iphone@2x.png in Resources */,
+				CF710CFB1AF0AC9D0033B44E /* player_top_button_resize_min@2x.png in Resources */,
+				CF710BFF1AF0A6810033B44E /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF710C051AF0A6810033B44E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CF710BEA1AF0A6800033B44E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF710D031AF0AC9D0033B44E /* SYThumbImageForVideo.m in Sources */,
+				CF5D7A381AF1DF9800D94274 /* SYVideoPlayerDefaultViewController.m in Sources */,
+				CF5B24D01AF21FCA0011C2E0 /* SYVideoPlayerViewController.m in Sources */,
+				CF710D011AF0AC9D0033B44E /* SYAudioPlayerView.m in Sources */,
+				CF710D041AF0AC9D0033B44E /* SYTimeFormatter.m in Sources */,
+				CF710D021AF0AC9D0033B44E /* SYMediaPlayer.m in Sources */,
+				CF710D0C1AF0AC9D0033B44E /* SYMoviePlayerManager.m in Sources */,
+				CF710BFA1AF0A6800033B44E /* ViewController.m in Sources */,
+				CF710D051AF0AC9D0033B44E /* SYVideoPlayerDefaultView.m in Sources */,
+				CF710BF71AF0A6800033B44E /* AppDelegate.m in Sources */,
+				CF710BF41AF0A6800033B44E /* main.m in Sources */,
+				CF710D0A1AF0AC9D0033B44E /* SYVideoPlayerLoadingView.m in Sources */,
+				CF5B24CD1AF211C90011C2E0 /* SYVideoPlayerView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF710C031AF0A6810033B44E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF710C0E1AF0A6810033B44E /* SYMeidaPlayerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CF710C091AF0A6810033B44E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF710BED1AF0A6800033B44E /* SYMeidaPlayer */;
+			targetProxy = CF710C081AF0A6810033B44E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CF710BFB1AF0A6810033B44E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF710BFC1AF0A6810033B44E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CF710C001AF0A6810033B44E /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF710C011AF0A6810033B44E /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CF710C0F1AF0A6810033B44E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CF710C101AF0A6810033B44E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CF710C121AF0A6810033B44E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SYMeidaPlayer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CF710C131AF0A6810033B44E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SYMeidaPlayer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CF710C151AF0A6810033B44E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SYMeidaPlayerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SYMeidaPlayer.app/SYMeidaPlayer";
+			};
+			name = Debug;
+		};
+		CF710C161AF0A6810033B44E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SYMeidaPlayerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SYMeidaPlayer.app/SYMeidaPlayer";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CF710BE91AF0A6800033B44E /* Build configuration list for PBXProject "SYMeidaPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF710C0F1AF0A6810033B44E /* Debug */,
+				CF710C101AF0A6810033B44E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF710C111AF0A6810033B44E /* Build configuration list for PBXNativeTarget "SYMeidaPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF710C121AF0A6810033B44E /* Debug */,
+				CF710C131AF0A6810033B44E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF710C141AF0A6810033B44E /* Build configuration list for PBXNativeTarget "SYMeidaPlayerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF710C151AF0A6810033B44E /* Debug */,
+				CF710C161AF0A6810033B44E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CF710BE61AF0A6800033B44E /* Project object */;
+}
