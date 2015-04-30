@@ -7,6 +7,7 @@
 //
 
 #import "SYVideoPlayerViewController.h"
+#import "SYVideoPlayerFullViewController.h"
 #import "SYVideoPlayerView.h"
 #import "SYTimeFormatter.h"
 #import <MediaPlayer/MediaPlayer.h>
@@ -14,6 +15,7 @@
 @interface SYVideoPlayerViewController ()
 @property (nonatomic, strong) NSDictionary *currentVideoInfo;
 @property (nonatomic, strong) SYVideoPlayerView *videoView;
+@property (nonatomic, strong) SYVideoPlayerFullViewController *fullVC;
 @property (nonatomic, readwrite, strong) AVPlayer *videoPlayer;
 @property (nonatomic, strong) NSURL *URL;
 /** 播放时间通知监听 */
@@ -25,6 +27,7 @@
 @property (nonatomic, assign) BOOL rotationIsLocked;
 @property (nonatomic, assign) BOOL playerIsBuffering;
 @property (nonatomic, assign) BOOL restoreVideoPlayStateAfterScrubbing;
+@property (nonatomic, assign) BOOL allowPortraitFullscreen;
 // 全屏前的bounds
 @property (nonatomic) CGRect previousBounds;
 @end
@@ -51,9 +54,9 @@
     
     NSString *vidID = videoID ?: @"";
     _currentVideoInfo = @{ @"title": title ?: @"", @"videoID": vidID, @"isStreaming": @(streaming), @"shareURL": shareURL ?: url};
-    NSLog(@"%@", self.URL);
     [[NSNotificationCenter defaultCenter] postNotificationName:@"VideoPlayerVideoChangedNotification" object:self userInfo:_currentVideoInfo];
     [self.videoView.timeLbl setText:@"00:00/00:00"];
+    [self.videoView.defaultVideoTime setText:@"00:00/00:00"];
     self.videoView.videoScrubber.value = 0;
     
     self.videoView.titleLbl.text = title;
@@ -143,7 +146,6 @@
 }
 
 /** 解决UISilder出现手势冲突问题 */
-
 - (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch {
     if ([touch.view isDescendantOfView:self.videoView.topView] || [touch.view isDescendantOfView:self.videoView.bottomView] || [touch.view isDescendantOfView:self.videoView.pSliderView]) {
         return NO;
@@ -189,18 +191,6 @@
     [[UIApplication sharedApplication] setStatusBarHidden:isHidingPlayerControls withAnimation:UIStatusBarAnimationNone];
 }
 
-//- (NSUInteger)supportedInterfaceOrientations {
-//    if (!self.videoView.fullScreen) {
-//        return UIInterfaceOrientationMaskLandscape;
-//    } else {
-//        return UIInterfaceOrientationMaskAll;
-//    }
-//}
-
-- (BOOL)shouldAutorotate {
-    return NO;
-}
-
 #pragma mark - 触摸事件
 /** 界面点击事件 */
 - (IBAction)videoTapHandler {
@@ -231,8 +221,6 @@
     } else {
         if (self.isPlaying) {
             CGFloat y2 = y * 5 / [UIScreen mainScreen].bounds.size.height;
-            
-            NSLog(@"%f", y2);
             [self.videoView.videoScrubber setValue:(self.videoView.videoScrubber.value + y2) animated:YES];
             
             if (self.isPlaying) {
@@ -243,11 +231,10 @@
                     if (isfinite(duration)) {
                         double currentTime = floor(duration * self.videoView.videoScrubber.value);
                         [self.videoView.timeLbl setText:[NSString stringWithFormat:@"%@/%@", [SYTimeFormatter stringFormattedTimeFromSeconds:&currentTime], [SYTimeFormatter stringFormattedTimeFromSeconds:&duration]]];
-                        NSLog(@"%@", self.videoView.timeLbl.text);
+                        
                         [self.videoPlayer seekToTime:CMTimeMakeWithSeconds((float) currentTime, NSEC_PER_SEC)];
                     }
                 }
-                
             }
         }
     }
@@ -407,33 +394,39 @@
 - (void)launchFullScreen {
     [[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationFade];
     [[UIApplication sharedApplication] setStatusBarOrientation:UIInterfaceOrientationLandscapeRight animated:YES];
-    [self hideControlsAnimated:YES];
-//    [[UIDevice currentDevice].orientation];
-//    if ([[UIDevice currentDevice] respondsToSelector:@selector(setOrientation:)]) {
-//        [[UIDevice currentDevice] performSelector:@selector(setOrientation:) withObject:UIDeviceOrientationLandscapeLeft];
-//    }
     
+    [self hideControlsAnimated:YES];
+    
+    if (!self.fullVC) {
+        self.fullVC = [[SYVideoPlayerFullViewController alloc] init];
+        self.fullVC.allowPortraitFullscreen = self.allowPortraitFullscreen;
+    }
     self.videoView.fullScreen = YES;
     self.previousBounds = self.videoView.frame;
-    [[UIDevice currentDevice] performSelector:@selector(setOrientation:) withObject:@(UIDeviceOrientationLandscapeRight)];
-    self.videoView.frame = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height);
+    [self.videoView removeFromSuperview];
+    [self.fullVC.view addSubview:self.videoView];
     
-//    [UIView animateWithDuration:0.25f delay:0.0f options:UIViewAnimationOptionCurveLinear animations:^{
-//        self.videoView.frame = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.height, [UIScreen mainScreen].bounds.size.width);
-//        self.view.transform = CGAffineTransformMakeRotation(M_PI/2);
-//    } completion:nil];
+    [UIView animateWithDuration:0.35 animations:^{
+        self.videoView.frame = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.height, [UIScreen mainScreen].bounds.size.width);
+    }];
+    [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:self.fullVC animated:YES completion:nil];
 }
 
 
 /** 缩小视频 */
 - (void)minimizeVideo {
-    [self showControls];
-    [[UIApplication sharedApplication] setStatusBarHidden:NO withAnimation:UIStatusBarAnimationFade];
-    [[UIApplication sharedApplication] setStatusBarOrientation:UIInterfaceOrientationPortrait animated:YES];
-    self.videoView.fullScreen = NO;
-    [self hideControlsAnimated:YES];
-    [[UIDevice currentDevice] performSelector:@selector(setOrientation:) withObject:@(UIDeviceOrientationPortrait)];
-    self.videoView.frame = self.previousBounds;
+    [[UIApplication sharedApplication].keyWindow.rootViewController dismissViewControllerAnimated:NO completion:^{
+        [self showControls];
+        [[UIApplication sharedApplication] setStatusBarHidden:NO withAnimation:UIStatusBarAnimationFade];
+        self.videoView.fullScreen = NO;
+        
+        [[UIApplication sharedApplication] setStatusBarOrientation:UIInterfaceOrientationPortrait animated:YES];
+        [UIView animateWithDuration:0.35 animations:^{
+            [self hideControlsAnimated:YES];
+            self.videoView.frame = self.previousBounds;
+            [self.parentViewController.view addSubview:self.view];
+        }];
+    }];
 }
 
 /** 旋转界面 */
@@ -521,13 +514,16 @@
     
     if (CMTIME_IS_INDEFINITE(playerDuration)) {
         [self.videoView.timeLbl setText:@"直播"];
+        [self.videoView.defaultVideoTime setText:@"直播"];
         return;
     }
     
     double duration = CMTimeGetSeconds(playerDuration);
     if (isfinite(duration)) {
         double currentTime = floor(CMTimeGetSeconds([self.videoPlayer currentTime]));
-        [self.videoView.timeLbl setText:[NSString stringWithFormat:@"%@/%@", [SYTimeFormatter stringFormattedTimeFromSeconds:&currentTime], [SYTimeFormatter stringFormattedTimeFromSeconds:&duration]]];
+        NSString *text = [NSString stringWithFormat:@"%@/%@", [SYTimeFormatter stringFormattedTimeFromSeconds:&currentTime], [SYTimeFormatter stringFormattedTimeFromSeconds:&duration]];
+        [self.videoView.timeLbl setText:text];
+        [self.videoView.defaultVideoTime setText:text];
     }
 }
 

@@ -36,13 +36,15 @@
 
 - (void)playVideo {
     [self addChildViewController:self.videoVC];
-    self.videoVC.view.frame = CGRectMake(0, 100, 300, 200);
+    self.videoVC.view.frame = CGRectMake(0, 100, self.view.frame.size.width, 250);
     [self.view addSubview:self.videoVC.view];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+//- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation {
+//    return UIInterfaceOrientationPortrait;
+//}
 
+//- (BOOL)shouldAutorotate {
+//    return NO;
+//}
 @end

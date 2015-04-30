@@ -10,7 +10,7 @@
 		CF5B24CD1AF211C90011C2E0 /* SYVideoPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF5B24CC1AF211C90011C2E0 /* SYVideoPlayerView.m */; };
 		CF5B24D01AF21FCA0011C2E0 /* SYVideoPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF5B24CF1AF21FCA0011C2E0 /* SYVideoPlayerViewController.m */; };
 		CF5B24D21AF221300011C2E0 /* SYVideoPlayerView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF5B24D11AF221300011C2E0 /* SYVideoPlayerView.storyboard */; };
-		CF5D7A381AF1DF9800D94274 /* SYVideoPlayerDefaultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF5D7A371AF1DF9800D94274 /* SYVideoPlayerDefaultViewController.m */; };
+		CF6B5DA01AF2533D008789D1 /* SYVideoPlayerFullViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6B5D9F1AF2533D008789D1 /* SYVideoPlayerFullViewController.m */; };
 		CF710BF41AF0A6800033B44E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CF710BF31AF0A6800033B44E /* main.m */; };
 		CF710BF71AF0A6800033B44E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF710BF61AF0A6800033B44E /* AppDelegate.m */; };
 		CF710BFA1AF0A6800033B44E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF710BF91AF0A6800033B44E /* ViewController.m */; };
@@ -43,7 +43,6 @@
 		CF710D021AF0AC9D0033B44E /* SYMediaPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = CF710CD01AF0AC9D0033B44E /* SYMediaPlayer.m */; };
 		CF710D031AF0AC9D0033B44E /* SYThumbImageForVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = CF710CD51AF0AC9D0033B44E /* SYThumbImageForVideo.m */; };
 		CF710D041AF0AC9D0033B44E /* SYTimeFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = CF710CD71AF0AC9D0033B44E /* SYTimeFormatter.m */; };
-		CF710D051AF0AC9D0033B44E /* SYVideoPlayerDefaultView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF710CDC1AF0AC9D0033B44E /* SYVideoPlayerDefaultView.m */; };
 		CF710D0A1AF0AC9D0033B44E /* SYVideoPlayerLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF710CE61AF0AC9D0033B44E /* SYVideoPlayerLoadingView.m */; };
 		CF710D0B1AF0AC9D0033B44E /* SYVideoPlayerLoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF710CE71AF0AC9D0033B44E /* SYVideoPlayerLoadingView.xib */; };
 		CF710D0C1AF0AC9D0033B44E /* SYMoviePlayerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CF710CEA1AF0AC9D0033B44E /* SYMoviePlayerManager.m */; };
@@ -65,8 +64,8 @@
 		CF5B24CE1AF21FCA0011C2E0 /* SYVideoPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYVideoPlayerViewController.h; sourceTree = "<group>"; };
 		CF5B24CF1AF21FCA0011C2E0 /* SYVideoPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYVideoPlayerViewController.m; sourceTree = "<group>"; };
 		CF5B24D11AF221300011C2E0 /* SYVideoPlayerView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SYVideoPlayerView.storyboard; sourceTree = "<group>"; };
-		CF5D7A361AF1DF9800D94274 /* SYVideoPlayerDefaultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYVideoPlayerDefaultViewController.h; sourceTree = "<group>"; };
-		CF5D7A371AF1DF9800D94274 /* SYVideoPlayerDefaultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYVideoPlayerDefaultViewController.m; sourceTree = "<group>"; };
+		CF6B5D9E1AF2533D008789D1 /* SYVideoPlayerFullViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYVideoPlayerFullViewController.h; sourceTree = "<group>"; };
+		CF6B5D9F1AF2533D008789D1 /* SYVideoPlayerFullViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYVideoPlayerFullViewController.m; sourceTree = "<group>"; };
 		CF710BEE1AF0A6800033B44E /* SYMeidaPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SYMeidaPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF710BF21AF0A6800033B44E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CF710BF31AF0A6800033B44E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -110,8 +109,6 @@
 		CF710CD51AF0AC9D0033B44E /* SYThumbImageForVideo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYThumbImageForVideo.m; sourceTree = "<group>"; };
 		CF710CD61AF0AC9D0033B44E /* SYTimeFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYTimeFormatter.h; sourceTree = "<group>"; };
 		CF710CD71AF0AC9D0033B44E /* SYTimeFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYTimeFormatter.m; sourceTree = "<group>"; };
-		CF710CDB1AF0AC9D0033B44E /* SYVideoPlayerDefaultView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYVideoPlayerDefaultView.h; sourceTree = "<group>"; };
-		CF710CDC1AF0AC9D0033B44E /* SYVideoPlayerDefaultView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYVideoPlayerDefaultView.m; sourceTree = "<group>"; };
 		CF710CE51AF0AC9D0033B44E /* SYVideoPlayerLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYVideoPlayerLoadingView.h; sourceTree = "<group>"; };
 		CF710CE61AF0AC9D0033B44E /* SYVideoPlayerLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYVideoPlayerLoadingView.m; sourceTree = "<group>"; };
 		CF710CE71AF0AC9D0033B44E /* SYVideoPlayerLoadingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SYVideoPlayerLoadingView.xib; sourceTree = "<group>"; };
@@ -147,6 +144,15 @@
 				CF5B24D11AF221300011C2E0 /* SYVideoPlayerView.storyboard */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		CF6B5D9D1AF25330008789D1 /* Full */ = {
+			isa = PBXGroup;
+			children = (
+				CF6B5D9E1AF2533D008789D1 /* SYVideoPlayerFullViewController.h */,
+				CF6B5D9F1AF2533D008789D1 /* SYVideoPlayerFullViewController.m */,
+			);
+			path = Full;
 			sourceTree = "<group>";
 		};
 		CF710BE51AF0A6800033B44E = {
@@ -282,31 +288,12 @@
 		CF710CD81AF0AC9D0033B44E /* SYVideoPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				CF6B5D9D1AF25330008789D1 /* Full */,
 				CF5B24CA1AF211650011C2E0 /* Base */,
-				CF710CDA1AF0AC9D0033B44E /* Default */,
-				CF710CDE1AF0AC9D0033B44E /* Full */,
 				CF710CE41AF0AC9D0033B44E /* Loading */,
 				CF710CE81AF0AC9D0033B44E /* System */,
 			);
 			path = SYVideoPlayer;
-			sourceTree = "<group>";
-		};
-		CF710CDA1AF0AC9D0033B44E /* Default */ = {
-			isa = PBXGroup;
-			children = (
-				CF710CDB1AF0AC9D0033B44E /* SYVideoPlayerDefaultView.h */,
-				CF710CDC1AF0AC9D0033B44E /* SYVideoPlayerDefaultView.m */,
-				CF5D7A361AF1DF9800D94274 /* SYVideoPlayerDefaultViewController.h */,
-				CF5D7A371AF1DF9800D94274 /* SYVideoPlayerDefaultViewController.m */,
-			);
-			path = Default;
-			sourceTree = "<group>";
-		};
-		CF710CDE1AF0AC9D0033B44E /* Full */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Full;
 			sourceTree = "<group>";
 		};
 		CF710CE41AF0AC9D0033B44E /* Loading */ = {
@@ -452,14 +439,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF710D031AF0AC9D0033B44E /* SYThumbImageForVideo.m in Sources */,
-				CF5D7A381AF1DF9800D94274 /* SYVideoPlayerDefaultViewController.m in Sources */,
 				CF5B24D01AF21FCA0011C2E0 /* SYVideoPlayerViewController.m in Sources */,
+				CF6B5DA01AF2533D008789D1 /* SYVideoPlayerFullViewController.m in Sources */,
 				CF710D011AF0AC9D0033B44E /* SYAudioPlayerView.m in Sources */,
 				CF710D041AF0AC9D0033B44E /* SYTimeFormatter.m in Sources */,
 				CF710D021AF0AC9D0033B44E /* SYMediaPlayer.m in Sources */,
 				CF710D0C1AF0AC9D0033B44E /* SYMoviePlayerManager.m in Sources */,
 				CF710BFA1AF0A6800033B44E /* ViewController.m in Sources */,
-				CF710D051AF0AC9D0033B44E /* SYVideoPlayerDefaultView.m in Sources */,
 				CF710BF71AF0A6800033B44E /* AppDelegate.m in Sources */,
 				CF710BF41AF0A6800033B44E /* main.m in Sources */,
 				CF710D0A1AF0AC9D0033B44E /* SYVideoPlayerLoadingView.m in Sources */,
