@@ -60,6 +60,7 @@
     self.videoView.videoScrubber.value = 0;
     
     self.videoView.titleLbl.text = title;
+    self.videoView.defaultTitleLabel.text = title;
     
     [[MPNowPlayingInfoCenter defaultCenter] setNowPlayingInfo:@{MPMediaItemPropertyTitle: title}];
     [self setURL:url];

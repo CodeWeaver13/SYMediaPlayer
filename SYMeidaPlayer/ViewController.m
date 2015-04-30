@@ -19,7 +19,7 @@
     if (_videoVC == nil) {
         UIStoryboard *sb = [UIStoryboard storyboardWithName:@"SYVideoPlayerView" bundle:nil];
         _videoVC = sb.instantiateInitialViewController;
-        [_videoVC playVideoWithTitle:@"播放视频" URL:[NSURL URLWithString:@"http://ignhdvod-f.akamaihd.net/i/assets.ign.com/videos/zencoder/,416/d4ff0368b5e4a24aee0dab7703d4123a-110000,640/d4ff0368b5e4a24aee0dab7703d4123a-500000,640/d4ff0368b5e4a24aee0dab7703d4123a-1000000,960/d4ff0368b5e4a24aee0dab7703d4123a-2500000,1280/d4ff0368b5e4a24aee0dab7703d4123a-3000000,-1354660143-w.mp4.csmil/master.m3u8"] videoID:@"0001" shareURL:nil isStreaming:YES playInFullScreen:NO];
+        [_videoVC playVideoWithTitle:@"我勒个槽啊" URL:[NSURL URLWithString:@"http://ignhdvod-f.akamaihd.net/i/assets.ign.com/videos/zencoder/,416/d4ff0368b5e4a24aee0dab7703d4123a-110000,640/d4ff0368b5e4a24aee0dab7703d4123a-500000,640/d4ff0368b5e4a24aee0dab7703d4123a-1000000,960/d4ff0368b5e4a24aee0dab7703d4123a-2500000,1280/d4ff0368b5e4a24aee0dab7703d4123a-3000000,-1354660143-w.mp4.csmil/master.m3u8"] videoID:@"0001" shareURL:nil isStreaming:YES playInFullScreen:NO];
     }
     return _videoVC;
 }

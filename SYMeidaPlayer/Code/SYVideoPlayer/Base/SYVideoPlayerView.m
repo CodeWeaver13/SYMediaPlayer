@@ -22,7 +22,6 @@
     self.titleLbl.font = [UIFont fontWithName:@"Forza-Medium" size:16.0f];
     self.titleLbl.numberOfLines = 2;
     self.titleLbl.lineBreakMode = NSLineBreakByWordWrapping;
-    self.defaultTitleLabel = self.titleLbl;
     // 播放按钮
     self.playOrPauseBtn.showsTouchWhenHighlighted = YES;
     // 全屏按钮
