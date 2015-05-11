@@ -1,5 +1,5 @@
 # SYMediaPlayer
-[![@wangshiyu13 on weibo](http://img.shields.io/badge/weibo-%40qiniutek-blue.svg)](http://weibo.com/2096908353/)
+[![@wangshiyu13 on weibo](https://img.shields.io/badge/weibo-%40wangshiyu13-blue.svg)](http://weibo.com/2096908353/)
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](LICENSE.md)
 [![Build Status](https://travis-ci.org/qiniu/objc-sdk.svg?branch=master)](https://travis-ci.org/qiniu/objc-sdk)
 [![Latest Stable Version](http://img.shields.io/cocoapods/v/Qiniu.svg)](https://github.com/qiniu/objc-sdk/releases)
