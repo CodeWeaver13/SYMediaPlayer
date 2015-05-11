@@ -11,7 +11,7 @@
 
 SYVideoPlayer *videoVC = [SYVideoPlayer player];
 
-[videoVC playWithTarget:self viewRect:CGRectMake(0, 100, self.view.frame.size.width, 250) Title:@"视频标题" URL:[NSURL URLWithString:@"视频URL"] videoID:@"视频ID" shareURL:[NSURL URLWithString:@"视频URL"] isStreaming:(Bool值，是否为流媒体) playInFullScreen:(Bool值，默认是否全屏)];
+[videoVC playWithTarget:(当前视图控制器) viewRect:(视频视图大小) Title:@"视频标题" URL:[NSURL URLWithString:@"视频URL"] videoID:@"视频ID" shareURL:[NSURL URLWithString:@"视频URL"] isStreaming:(Bool值，是否为流媒体) playInFullScreen:(Bool值，默认是否全屏)];
 
 ```
 
