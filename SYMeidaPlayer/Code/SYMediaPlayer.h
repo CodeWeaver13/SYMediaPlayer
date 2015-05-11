@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "SYMoviePlayerManager.h"
+#import "SYVideoPlayer.h"
 
 @interface SYMediaPlayer : NSObject
 
