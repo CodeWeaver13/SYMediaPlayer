@@ -156,6 +156,7 @@
 
 #pragma mark - 通知管理
 - (void)dealloc {
+    NSLog(@"dealloc");
     [[NSNotificationCenter defaultCenter] removeObserver:self];
     [self removeObserversFromVideoPlayerItem];
     [self removePlayerTimeObservers];
@@ -280,6 +281,9 @@
         [self changePlayBtnImage];
         // 使屏幕可休眠
         [[UIApplication sharedApplication] setIdleTimerDisabled:NO];
+        [self removeFromParentViewController];
+        [self.view removeFromSuperview];
+        [self removePlayerTimeObservers];
     }];
 }
 
